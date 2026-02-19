@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">DermaCare</div>
+
+    <div class="nav-right">
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/products}">Products</a>
+        <a th:href="@{/cart}">Cart</a>
+        <a th:href="@{/chat}">Dermatologist Chat</a>
+
+        <a th:href="@{/login}" class="account-icon">
+            <i class="fa-regular fa-user"></i>
+        </a>
+    </div>
+</div>
+
+<div class="cart-container">
+    <h1>Your Cart</h1>
+
+    <div class="cart-item">
+        <img src="https://www.koreanbeautys.com/cdn/shop/files/AQAAAAAAAAAAAA.jpg?v=1700683247&width=200">
+
+        <div class="item-info">
+            <h3>Beauty of Joseon Glow Serum</h3>
+            <p>$19.99</p>
+
+            <div class="quantity">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+
+        <div class="item-total">
+            $19.99
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <p>Total:</p>
+        <h2>$19.99</h2>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+</body>
+</html>
+
